@@ -576,7 +576,7 @@ body {
 }
 
 #contacto .div_title_contact{
-    max-width: 700px;
+    max-width: 1024px;
     margin: auto;
     padding-bottom: 30px;
 }
@@ -595,7 +595,38 @@ body {
     margin: auto;
 }
 
-#contacto .div_form{
+#contacto .container .card_contact {
+    border-radius: 10px;
+}
+
+#contacto .card_title {
+    letter-spacing: 1px;
+    color: #04e3a8;
+}
+
+#contacto .card hr {
+    opacity: 1;
+    border-color: #04e3a8;
+    border-width: 0.25rem;
+    width: 3rem;
+}
+
+#contacto .icon_color {
+    color: #04e3a8;
+    font-size: 2rem;
+}
+
+#contacto .link_contact {
+    text-decoration: none;
+    color: #04e3a8;
+    cursor: pointer !important;
+}
+
+#contacto .description_contact {
+    color: #04e3a8;
+}
+
+/* #contacto .div_form{
     max-width: 700px;
     margin: auto;
 }
@@ -636,7 +667,7 @@ body {
     color: #fff;
     background-color: #000000;
     border-color: #000;
-}
+} */
 
 
 
@@ -983,6 +1014,14 @@ body {
         height: 330px;
     }
 
+    #contacto .container {
+        max-width: 960px;
+    }
+
+    #contacto .div_title_contact h3 {
+        font-size: 1rem;
+    }
+
     #footer #social_footer {
         width: 22%;
     }
@@ -996,14 +1035,26 @@ body {
         width: 45%;
     }
 
-    #contacto .div_title_contact h3 {
-        font-size: 1rem;
+    #contacto .div_title_contact {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .div_download_cv{
         width: 100%;
         left: 0;
         right: 0;
+    }
+}
+
+@media(max-width: 767px){
+    #contacto .div_title_contact {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    #contacto .container {
+        width: 60%;
     }
 }
 
@@ -1076,9 +1127,11 @@ body {
     #portafolio .projects #project {
         width: 80%;
     }
-    #contacto .div_title_contact {
-        padding: 0px 90px 30px 90px;
+
+    #contacto .container {
+        width: 80%;
     }
+    
     #footer .frase_einstein {
         width: 98%;
     }
@@ -1101,10 +1154,16 @@ body {
     #project .overlay_project a {
         font-size: 15px;
     }
-    
-    .form .row .col{
-        flex: none;
+
+    #contacto .div_title_contact {
+        padding-left: 40px;
+        padding-right: 40px;
     }
+
+    #contacto .container {
+        width: 100%;
+    }
+
     .section_download_cv {
         padding: 80px 0;
     }
@@ -1124,10 +1183,6 @@ body {
 @media(max-width: 520px) {
     #skillset #slider {
         width: 35%;
-    }
-
-    #contacto .div_title_contact {
-        padding: 0px 50px 30px 50px;
     }
 }
 

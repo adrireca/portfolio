@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="public/imgs/favicon/favicon1.svg">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+
+    <!-- Animate AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- estilos css y bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/stylesPortafolio.css" />
+
+
+
+</head>
+
+<body>
+
+    <!-- puntero personalizado -->
+    <div id="sigueme"></div>
+
+
+    <!-- header -->
+    <header id="header">
+
+        <!-- redes sociales -->
+        <div id="social">
+            <img src="public/imgs/logo2.svg" />
+        </div>
+
+
+        <!-- menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="link_about">Sobre mí...</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="link_skillset"><span
+                                    class="color-skillset">Skillset</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="link_servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                id="link_seccion_portafolio">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="link_contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- título e imagen-header -->
+        <div class="row divTitleImg">
+            <div class="col-5 titulo d-block">
+                <h1 data-aos="fade-right">
+                    <span>H</span><span>o</span><span>l</span><span>a</span><span>,</span><br>
+                    <span>s</span><span>o</span><span>y</span>
+                    <strong>A</strong><span>d</span><span>r</span><span>i</span><span>á</span><span>n</span><span>,</span>
+                    <br>
+                    <span>d</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
+                    <span>w</span><span>e</span><span>b</span>
+                </h1>
+                <p class="text-secondary" data-aos="fade-right">Freelance</p>
+                <form class="d-flex justify-content-center mt-4">
+                    <a href="#" class="btn btn-outline-success" id="link-contacto-tit" data-aos="fade-up">Contacto</a>
+                </form>
+            </div>
+            <div class="col imagen-header text-center">
+                <img src="public/imgs/workspace1-flat-lay_122064.svg" class="icon_header" data-aos="zoom-in">
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+
+    <!-- sección principal -->
+    <div class="row g-0">
+
+        <!-- sobre mí -->
+        <section id="about" class="col-md-8">
+            <div class="barra_seccion" data-aos="fade-down">
+                <h3><span class="color-letra">S</span>obre <span class="color-letra">m</span>í...</h3>
+            </div>
+
+            <div class="sobre_mi">
+
+                <div class="img_perfil">
+                    <div class="marco-foto" data-aos="fade-up-right"></div>
+                    <img src="public/imgs/foto_perfil_1.png" data-aos="fade-up-left" />
+                </div>
+
+
+                <div class="descripcion">
+                    <p>Me apasiona el desarrollo web.</p>
+                    <p>Este interés por el mundo de la programación tuvo lugar cuando comencé a cursar un módulo de
+                        grado superior de FP en el instituto,
+                        concretamente el ciclo formativo de Desarrollo de Aplicaciones Web. Desde entonces, no he parado
+                        de investigar
+                        y seguir aprendiendo.</p>
+                    <p>Me considero una persona autodidacta en constante aprendizaje en nuevas tecnologías, responsable en mis objetivos
+                        y muy motivado de seguir creciendo profesionalmente.</p>
+                </div>
+            </div>
+
+
+
+            <!-- skillset -->
+            <section id="skillset">
+                <div class="barra_seccion">
+                    <h3><span class="color-letra">Skill</span>sets</h3>
+                </div>
+                <div id="slider" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner" data-aos="fade-up">
+                        <div class="carousel-item active skillsets" data-bs-toggle="tooltip" title="html5">
+                            <img class="d-block mx-auto" src="public/imgs/skills/html5.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Css3">
+                            <img class="d-block mx-auto" src="public/imgs/skills/css3.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="JavaScript">
+                            <img class="d-block mx-auto" src="public/imgs/skills/js.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Sass">
+                            <img class="d-block mx-auto" src="public/imgs/skills/sass.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Bootstrap">
+                            <img class="d-block mx-auto" src="public/imgs/skills/bootstrap.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="TypeScript">
+                            <img class="d-block mx-auto" src="public/imgs/skills/typescript.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="React">
+                            <img class="d-block mx-auto" src="public/imgs/skills/react.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Angular">
+                            <img class="d-block mx-auto" src="public/imgs/skills/angular.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Jquery">
+                            <img class="d-block mx-auto" src="public/imgs/skills/jquery.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Php">
+                            <img class="d-block mx-auto" src="public/imgs/skills/php.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Node">
+                            <img class="d-block mx-auto" src="public/imgs/skills/node.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Git">
+                            <img class="d-block mx-auto" src="public/imgs/skills/git.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Photoshop">
+                            <img class="d-block mx-auto" src="public/imgs/skills/photoshop.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="MongoDB">
+                            <img class="d-block mx-auto" src="public/imgs/skills/mongo.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Sql">
+                            <img class="d-block mx-auto" src="public/imgs/skills/sql.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="wordpress">
+                            <img class="d-block mx-auto" src="public/imgs/skills/wordpress.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Java">
+                            <img class="d-block mx-auto" src="public/imgs/skills/java.svg" />
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="col-md-4" id="lateral">
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- SERVICIOS FREELANCE -->
+    <section id="servicios" class="seccion_freelance">
+        <div class="barra_seccion">
+            <h3>Servicios</h3>
+            <p>Tu sitio web a medida en solo 4 pasos</p>
+        </div>
+
+        <div class="div_freelance row">
+            <div class="pasos_freelance col" data-aos="fade-up">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h4>Auditoría</h4>
+                <p>Definiremos el propósito de tu sitio web, además de recopilar todo el material necesario para el posterior desarrollo.</p>
+            </div>
+            <div class="pasos_freelance col" data-aos="fade-down">
+                <i class="fa-regular fa-file-lines"></i>
+                <h4>Presupuesto</h4>
+                <p>Basándonos en todo el material recopilado, realizaremos un presupuesto detallado de todas las tareas a desarrollar.</br>
+                    A su vez, se podrá concretar una reunión con el objetivo de matizar las tareas descritas en el presupuesto.
+                </p>
+            </div>
+            <div class="pasos_freelance col" data-aos="fade-up">
+                <i class="fa-solid fa-code"></i>
+                <h4>Desarrollo</h4>
+                <p>¡Manos a la obra! tu sitio web ya está en desarrollo siguiendo los puntos descritos en el presupuesto y con un tiempo aproximado de 4 semanas.</p>
+            </div>
+            <div class="pasos_freelance col" data-aos="fade-down">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h4>Presentación del proyecto</h4>
+                <p>¡Felicidades! tu sitio web ya está listo.</br>
+                    Realizaremos una reunión donde presentaremos el proyecto final para dejar por concluído el trabajo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Proyectos -->
+    <section id="seccion-portafolio">
+        <div class="barra_seccion">
+            <h3 data-aos="fade-down">Últimos Proyectos</h3>
+        </div>
+
+        <div id="portafolio">
+
+            <div class="projects row">
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/sonia_estilistas.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Sonia Estilistas.</h3>
+                            <a href="https://sonia-estilistas.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/proyecto_web_deporte.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Sports template.</h3>
+                            <a href="https://sports-template.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/app-to-do-list.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>To do list.</h3>
+                            <a href="https://to-do-list.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/tienda_online.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Ecommerce template.</h3>
+                            <a href="https://ecommerce-template.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/tienda_cosmeticos.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Tienda cosméticos.</h3>
+                            <a href="https://tienda-cosmeticos.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/fusitec.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Fusitec.</h3>
+                            <a href="https://fusitec.adrianreyesweb.com/" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/limpieza_reyes.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Limpieza Reyes.</h3>
+                            <a href="https://servicios-limpieza-reyes.adrianreyesweb.com/" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/galeria_fotos.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Grid gallery.</h3>
+                            <a href="https://gallery.adrianreyesweb.com" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/ddcgap.png" />
+                        <figcaption class="overlay_project">
+                            <h3>DDCGAP.</h3>
+                            <a href="https://ddcgap.com/" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- contacto -->
+    <section id="contacto">
+        <div class="div_title_contact barra_seccion">
+            <h3 data-aos="fade-down">Estoy muy emocionado de emprender nuevos retos y ayudarte en lo que sea<br>
+                ¿comenzamos?</h3>
+        </div>
+
+        <div class="div_form">
+            <form class="contact-form" method="POST">
+                <div class="row">
+                    <div class="col mb-3">
+                        <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Email" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <button id="btn_form" class="btn btn-lg submit" name="boton_form" type="submit" data-aos="fade-up">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Bloque descargar cv -->
+    <section class="section_download_cv">
+        <div class="div_download_cv row" data-aos="flip-up">
+            <div class="parrafo_cv col">
+                <p>Puedes ver mi currículum</p>
+            </div>
+            <div class="btn_cv col">
+                <a href="public/imgs/cv_adri.pdf" target="_blank">Currículum</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+    <!-- footer -->
+    <footer id="footer" class="row">
+        <div class="quote col">
+            <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <div class="frase_einstein col-4 mt-3">
+            <h3>La vida es como andar en bicicleta. Para mantener el equilibrio, debe mantenerse en movimiento.<br>Albert Einstein</h3>
+        </div>
+        <div id="social_footer" class="col-2">
+            <a href="https://linkedin.com/in/adrian-reyes-calero-aa0395225/" target="_blank" title="Linkedin" data-aos="fade-right">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/adrireca" target="_blank" title="Github" data-aos="fade-down">
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+            <a href="https://es-es.facebook.com/adrian.reyescalero" target="_blank" title="Facebook" data-aos="fade-left">
+                <i class="fa-brands fa-facebook-f"></i>            
+            </a>
+        </div>
+        <div class="copyright col">
+            <p>&copy; <span id="footerDate"></span> Designed and developed by<span><br>Adrián Reyes</span></p>
+        </div>
+        <div id="subir">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+
+
+    <!-- fontAwesome js-->
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" /> -->
+    <script src="https://kit.fontawesome.com/46a4bd0895.js" crossorigin="anonymous"></script>
+
+    <!--jquery-->
+    <!-- <script src="JQuery/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- js bootstrap -->
+    <!-- <script type="text/javascript" src="JQuery/popper.min.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Animate AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- mi js -->
+    <script src="public/js/portafolio.js"></script>
+    <script src="public/js/app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

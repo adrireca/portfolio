@@ -1,0 +1,1174 @@
+/********************************* RESET *********************************/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+variable,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th,
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+
+
+
+
+
+
+
+/********************************* ESTILOS GENERALES *********************************/
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    /*oculta las posibles barras de scroll en caso de pasarnos del tamaño de pantalla*/
+}
+
+* {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+
+/********************************* PUNTERO PERSONALIZADO *********************************/
+#sigueme {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border: 2px solid #04e3a8;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+/********************************* HEADER *********************************/
+#header {
+    width: 100%;
+    min-height: 1080px;
+    background-color: #000000;
+}
+
+#header .divTitleImg {
+    clear: both;
+}
+
+#header .titulo {
+    flex-basis: 50%;
+    margin-top: 290px;
+    z-index: 1;
+}
+
+#header .titulo h1 {
+    margin-bottom: 20px;
+    font-size: 5.5rem;
+    color: #fff;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#header .titulo p {
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin-left: 10%;
+    color: #04e3a8 !important;
+}
+
+#header .titulo h1 strong {
+    color: #04e3a8;
+}
+
+#header .btn-outline-success {
+    color: #fff;
+    border-color: #04e3a8;
+    transition: all 500ms;
+    font-size: 20px;
+}
+
+#header .btn-outline-success:hover {
+    color: #000000;
+    background-color: #04e3a8;
+}
+
+#header .imagen-header {
+    flex-basis: 50%;
+    line-height: 800px;
+    z-index: 1;
+}
+
+#header .imagen-header img {
+    max-width: 60%;
+}
+
+#header .titulo span {
+    transition: all 300ms;
+}
+
+#header .titulo span:hover {
+    color: #04e3a8;
+    /* animation: elasticLetter 0.5s ease-out; */
+}
+
+/*
+@keyframes elasticLetter{
+	0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    75%{
+        transform: scaleY(.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+*/
+
+
+
+
+
+
+/********************************* HEADER SOCIAL LINKS *********************************/
+#social {
+    width: 5%;
+    float: left;
+    position: relative;
+    animation: from-left 1500ms linear;
+    padding: 10px;
+}
+
+@keyframes from-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#social img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************* MENÚ NAV *********************************/
+.navbar-expand-lg .navbar-nav {
+    justify-content: flex-end;
+}
+
+#header .navbar-nav {
+    animation: from-right 1000ms linear;
+}
+
+@keyframes from-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#header .nav-item {
+    margin-right: 1%;
+}
+
+#header .nav-item a {
+    transition: all 300ms;
+    font-size: 19px;
+}
+
+#header .nav-item a:hover {
+    color: #04e3a8;
+    transform: scale(1, 1.2);
+}
+
+#header .color-skillset {
+    color: #04e3a8;
+}
+
+
+
+
+
+
+
+
+
+/********************************* TÍTULOS SECCIONES (GENERAL) *********************************/
+.barra_seccion h3 {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: #04e3a8;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************* ABOUT *********************************/
+#about {
+    min-height: 910px;
+    background-color: #04e3a8;
+    padding: 70px 0;
+}
+
+#about>.barra_seccion>h3 {
+    display: block;
+    margin-left: 11%;
+    margin-bottom: 3%;
+    width: 59%;
+    font-size: 80px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+}
+
+#about .barra_seccion .color-letra {
+    color: #000000;
+}
+
+.sobre_mi {
+    width: 59%;
+    text-align: justify;
+    margin-left: 11%;
+}
+
+.img_perfil {
+    width: 350px;
+    position: absolute;
+    left: 56%;
+    z-index: 1;
+}
+
+.img_perfil img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.marco-foto {
+    position: absolute;
+    width: 400px;
+    height: 462px;
+    left: 17%;
+    top: 20%;
+    border: 5px solid #fff;
+    z-index: -1;
+}
+
+.descripcion p {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/********************************* SKILLSET *********************************/
+#skillset {
+    width: 100%;
+    margin: 0 auto;
+}
+#skillset .barra_seccion{
+    margin-top: 10%;
+    padding-bottom: 40px;
+}
+#skillset .barra_seccion h3 {
+    width: 59%;
+    margin-left: 11%;
+    font-size: 32px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+#skillset #slider {
+    width: 30%;
+    margin-left: 26%;
+}
+
+#skillset .carousel-inner {
+    margin: 0 auto;
+    width: 27%;
+}
+
+#skillset .carousel-item img {
+    width: 93%;
+}
+
+.carousel-control-next {
+    width: 30%;
+}
+
+.carousel-control-prev {
+    width: 30%;
+}
+
+#skillset img {
+    border-radius: 15px;
+    transition: all 300ms;
+    width: 92%;
+}
+
+#skillset .skillsets:hover img {
+    opacity: 0.9;
+}
+
+#lateral {
+    min-height: 800px;
+    background-color: #04e3a8;
+}
+
+
+
+
+
+
+
+
+/********************************* FREELANCE *********************************/
+.seccion_freelance{
+    width: 100%;
+    background-color: #212121;
+    padding: 100px 0 120px 0;
+}
+.seccion_freelance .barra_seccion p{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    font-size: 1.2rem;
+}
+.div_freelance{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.pasos_freelance{
+    border: 1px solid #04e3a8;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+.pasos_freelance i{
+    color: #04e3a8;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.pasos_freelance h4{
+    color: #04e3a8;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.pasos_freelance p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+}
+
+
+
+
+
+
+
+
+/********************************* PROYECTOS *********************************/
+#seccion-portafolio{
+    background-color: #fff;
+    padding: 70px 0;
+}
+#portafolio {
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+#portafolio .projects {
+    justify-content: center;
+}
+
+#portafolio .projects #project {
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+#project .img-project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 2rem;
+}
+
+#project .img-project img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+#project .overlay_project {
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transition: .25s ease-in-out;
+    transform: translate(-48%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#project .img-project:hover .overlay_project {
+    opacity: 1;
+}
+
+#project .overlay_project h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#project .overlay_project a {
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-width: 2px;
+    color: white;
+    border-color: #04e3a8;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: all 300ms;
+}
+
+#project .overlay_project a:hover {
+    color: #000000;
+    background-color: #04e3a8;
+}
+
+#project .img-project .background_overlay_project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #000000;
+    transition: .45s ease-in-out;
+    border-radius: 15px;
+}
+
+#project .img-project:hover .background_overlay_project {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************* CONTACTO *********************************/
+#contacto{
+    background-color: #04e3a8;
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+#contacto .div_title_contact{
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#contacto .div_title_contact h3{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#contacto .div_title_contact hr{
+    max-width: 89%;
+    margin: auto;
+}
+
+#contacto .div_form{
+    max-width: 700px;
+    margin: auto;
+}
+
+#contacto .div_form .form-control{
+    padding: 1rem 0.75rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+#contacto .div_form .form-control::placeholder{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#contacto .div_form .form-control::placeholder{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#contacto .div_form .form-control:focus, #contacto .div_form .submit:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+
+#contacto .submit{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 500ms;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#contacto .submit:hover{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000;
+}
+
+
+
+
+
+
+
+
+/********************************* DIV DESCARGAR CV *********************************/
+.section_download_cv{
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #000000;
+}
+.div_download_cv{
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    flex-direction: row;
+    text-align: center;
+    background-color: #212121;
+    padding: 50px;
+    border-radius: 10px;
+    top: -25%;
+    right: 1%;
+    left: 1%;
+}
+.parrafo_cv p{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #04e3a8;
+}
+.btn_cv a{
+    padding: 10px 60px;
+    border: 1px solid #04e3a8;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: all 500ms;
+}
+.btn_cv a:hover{
+    background-color: #04e3a8;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+/********************************* FOOTER *********************************/
+#footer{
+    width: 100%;
+    flex-direction: column;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+#footer .quote i{
+    font-size: 3rem;
+}
+#footer .frase_einstein{
+    margin: auto;
+}
+#footer .frase_einstein h3{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 1.6rem;
+    line-height: 35px;
+}
+#footer #social_footer{
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: auto;
+}
+#footer #social_footer a{
+    border: 1px solid #04e3a8;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 500ms;
+}
+#footer #social_footer a i{
+    color: #04e3a8;
+    font-size: 1.8rem;
+}
+#footer #social_footer a:hover i{
+    color: #000000;
+}
+#footer #social_footer a:hover{
+    background-color: #04e3a8;
+}
+#footer .copyright p span{
+    color: #04e3a8;
+}
+#footer #subir{
+    text-align: right;
+}
+#footer #subir {
+    animation: flecha-up 1.5s linear;
+    animation-iteration-count: infinite;
+    padding-bottom: 5px;
+}
+
+#footer #subir i {
+    color: #04e3a8;
+    font-size: 1.5rem;
+}
+
+#footer #subir:hover {
+    opacity: 0.8;
+}
+@keyframes flecha-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(5%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-5%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+/********************************* RESPONSIVE *********************************/
+
+@media(min-width: 2200px){
+    #skillset .barra_seccion h3{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 1530px){
+    #footer .frase_einstein{
+        min-width: 40%;
+    }
+}
+
+@media(max-width: 1502px) {
+    #header .titulo h1{
+        font-size: 5rem;
+    }
+
+    #header #social {
+        width: 6%;
+    }
+    
+}
+
+@media(max-width:1350px){
+    #header .titulo h1{
+        font-size: 4rem;
+    }
+    #header .titulo p {
+        font-size: 16px;
+    }
+    #header .btn-outline-success{
+        font-size: 16px;
+    }
+    .parrafo_cv p {
+        font-size: 1.4rem;
+    }
+    .btn_cv a {
+        padding: 10px 40px;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:1300px) {
+    #project .overlay_project a {
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width: 1255px) {
+    #header #social {
+        width: 7%;
+    }
+
+    #about {
+        flex-basis: 100%;
+    }
+
+    #about>.barra_seccion>h3 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .sobre_mi {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .marco-foto {
+        display: none;
+    }
+
+    .img_perfil {
+        width: 200px;
+        position: inherit;
+        margin: auto;
+    }
+
+    .img_perfil img {
+        width: 100%;
+        height: 230px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .descripcion {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #skillset .barra_seccion h3 {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0;
+        text-align: center;
+        border: none;
+    }
+
+    #skillset #slider {
+        width: 24%;
+        margin-left: 0;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+
+    #lateral {
+        display: none;
+    }
+
+    .pasos_freelance i{
+        font-size: 3rem;
+    }
+
+    .parrafo_cv p {
+        font-size: 1.2rem;
+    }
+
+    #contacto .div_title_contact h3 {
+        font-size: 1.3rem;
+    }
+
+    #footer #social_footer a {
+        width: 45px;
+        height: 45px;
+    }
+    #footer #social_footer a i {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:1130px) {
+    #header #social {
+        width: 10%;
+    }
+
+    #header .imagen-header {
+        display: none;
+    }
+
+    #header .titulo {
+        flex-basis: 100%;
+        margin: auto;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #header .titulo h1 {
+        margin-left: 0;
+        font-size: 5rem;
+    }
+
+    #header .titulo p {
+        margin-left: 0;
+    }
+
+    .div_freelance{
+        width: 80%;
+    }
+    .pasos_freelance{
+        flex-basis: 40%;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+
+    #portafolio .projects #project {
+        width: 40%;
+    }
+    .div_download_cv {
+        width: 70%;
+    }
+    #footer .frase_einstein {
+        width: 69%;
+    }
+}
+
+@media(max-width: 991px) {
+    #header .container-fluid {
+        justify-content: flex-end;
+    }
+
+    #header .navbar-nav {
+        text-align: end;
+        animation: from-right 500ms linear;
+    }
+
+    .div_freelance{
+        width: 90%;
+    }
+    .pasos_freelance{
+        height: 330px;
+    }
+
+    #footer #social_footer {
+        width: 22%;
+    }
+}
+
+@media(max-width: 840px) {
+    .descripcion {
+        width: 80%;
+    }
+    #portafolio .projects #project {
+        width: 45%;
+    }
+
+    #contacto .div_title_contact h3 {
+        font-size: 1rem;
+    }
+
+    .div_download_cv{
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media(max-width: 750px){
+    .div_freelance{
+        width: 60%;
+    }
+    .pasos_freelance{
+        flex-basis: 100%;
+        height: 300px;
+    }
+    .pasos_freelance i{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 690px) {
+    #header {
+        min-height: 775px;
+    }
+
+    #header #social {
+        width: 12%;
+    }
+
+    #header .titulo {
+        margin-top: 100px;
+    }
+
+    #header .titulo h1 {
+        font-size: 3.5rem;
+    }
+
+    #header .titulo p {
+        font-size: 15px;
+    }
+
+    .btn-outline-success {
+        font-size: 14px;
+    }
+
+    #about {
+        min-height: 770px;
+    }
+
+    .img_perfil {
+        width: 150px;
+    }
+
+    .img_perfil img {
+        height: 170px;
+    }
+
+    #about>.barra_seccion>h3 {
+        font-size: 40px;
+    }
+
+    #skillset .barra_seccion h3 {
+        font-size: 30px;
+    }
+
+    .descripcion {
+        width: 80%;
+    }
+
+    .descripcion p {
+        font-size: 16px;
+    }
+
+    #portafolio .projects #project {
+        width: 80%;
+    }
+    #contacto .div_title_contact {
+        padding: 0px 90px 30px 90px;
+    }
+    #footer .frase_einstein {
+        width: 98%;
+    }
+    #footer #social_footer {
+        width: 30%;
+    }
+}
+
+@media(max-width: 560px){
+    .div_freelance {
+        width: 90%;
+    }
+
+    #portafolio .projects #project {
+        width: 100%;
+    }
+    #project .overlay_project h3 {
+        font-size: 1.5rem;
+    }
+    #project .overlay_project a {
+        font-size: 15px;
+    }
+    
+    .form .row .col{
+        flex: none;
+    }
+    .section_download_cv {
+        padding: 80px 0;
+    }
+    .div_download_cv{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #footer .frase_einstein h3 {
+        font-size: 1.4rem;
+    }
+    #footer #social_footer {
+        width: 55%;
+    }
+
+}
+
+@media(max-width: 520px) {
+    #skillset #slider {
+        width: 35%;
+    }
+
+    #contacto .div_title_contact {
+        padding: 0px 50px 30px 50px;
+    }
+}
+
+@media(max-width:430px){
+    #header #social {
+        width: 15%;
+    }
+
+    #header .titulo h1 {
+        font-size: 3rem;
+    }
+
+    .seccion_freelance {
+        padding: 60px 0 80px 0;
+    }
+    .div_freelance{
+        width: 95%;
+    }
+    .pasos_freelance i{
+        font-size: 3rem;
+    }
+
+    #seccion-portafolio {
+        padding: 0;
+    }
+    
+    .div_download_cv {
+        display: block;
+    }
+    .div_download_cv .parrafo_cv{
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:360px){
+    #header #social {
+        width: 18%;
+    }
+
+    .pasos_freelance{
+        height: 330px;
+        padding: 30px 15px;
+    }
+}

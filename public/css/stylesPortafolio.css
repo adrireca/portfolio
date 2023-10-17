@@ -586,17 +586,18 @@ body {
     padding-bottom: 20px;
     line-height: 50px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #212121;
     text-transform: uppercase;
+}
+
+#contacto .container .card_contact {
+    border-radius: 10px;
+    background: #000;
 }
 
 #contacto .div_title_contact hr{
     max-width: 89%;
     margin: auto;
-}
-
-#contacto .container .card_contact {
-    border-radius: 10px;
 }
 
 #contacto .card_title {
@@ -606,8 +607,8 @@ body {
 
 #contacto .card hr {
     opacity: 1;
-    border-color: #04e3a8;
-    border-width: 0.25rem;
+    color: #fff;
+    height: 3px;
     width: 3rem;
 }
 

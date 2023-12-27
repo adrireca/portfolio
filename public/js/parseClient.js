@@ -5,10 +5,10 @@
 // Parse.initialize(app_id, js_key);
 // Parse.serverURL = host_url;
 
-/* Conexión back4app. */
-Parse.initialize("UgiSe69sTu9YQigZDcYMeFI6dTs1l7DlMrjXMWB2", "G8b7XtnZvPHKKUbGtkTRAN8FvAX8U5KTsjrtdMoa");
-Parse.serverURL = "https://parseapi.back4app.com/";
+import { app_id, js_key, host_url } from './config.js';
 
+Parse.initialize(app_id, js_key);
+Parse.serverURL = host_url;
 
 
 async function createMessageForm() {

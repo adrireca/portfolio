@@ -11,6 +11,9 @@
     <!-- Parse back4app. -->
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
+    <script type="module" src="public/js/config.js"></script>
+    <script type="module" src="public/js/parseClient.js"></script>
+
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="public/imgs/favicon/favicon1.svg">
 
@@ -284,6 +287,82 @@
         <div id="portafolio">
 
             <div class="projects row">
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/ddcgap.png" />
+                        <figcaption class="overlay_project">
+                            <h3>DDCGAP</h3>
+                            <a href="https://ddcgap.com/" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/top_crono.png" />
+                        <figcaption class="overlay_project">
+                            <h3>Top Crono</h3>
+                            <a href="https://www.top-crono.com/" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/app-to-do-list.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>To do list</h3>
+                            <a href="https://adrireca.github.io/to-do-list/" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/galeria_fotos.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Grid gallery</h3>
+                            <a href="https://adrireca.github.io/grid-gallery/" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/proyecto_web_deporte.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Sports template</h3>
+                            <a href="https://adrireca.github.io/sports-template/" class="btn mt-3" target="_blank">Visit
+                                website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="public/imgs/imgs_proyectos/tienda_online.jpg" />
+                        <figcaption class="overlay_project">
+                            <h3>Ecommerce template</h3>
+                            <a href="https://adrireca.github.io/ecommerce-template/" class="btn mt-3"
+                                target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
                 <!-- <div class="col-3" id="project" data-aos="zoom-in-up">
                     <figure class="img-project">
                         <img src="public/imgs/imgs_proyectos/sonia_estilistas.jpg" />
@@ -297,45 +376,6 @@
                         <div class="background_overlay_project"></div>
                     </figure>
                 </div> -->
-                <div class="col-3" id="project" data-aos="zoom-in-up">
-                    <figure class="img-project">
-                        <img src="public/imgs/imgs_proyectos/proyecto_web_deporte.jpg" />
-                        <figcaption class="overlay_project">
-                            <h3>Sports template.</h3>
-                            <a href="https://adrireca.github.io/sports-template/" class="btn mt-3" target="_blank">Visit
-                                website
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </figcaption>
-                        <div class="background_overlay_project"></div>
-                    </figure>
-                </div>
-                <div class="col-3" id="project" data-aos="zoom-in-up">
-                    <figure class="img-project">
-                        <img src="public/imgs/imgs_proyectos/app-to-do-list.jpg" />
-                        <figcaption class="overlay_project">
-                            <h3>To do list.</h3>
-                            <a href="https://adrireca.github.io/to-do-list/" class="btn mt-3" target="_blank">Visit
-                                website
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </figcaption>
-                        <div class="background_overlay_project"></div>
-                    </figure>
-                </div>
-                <div class="col-3" id="project" data-aos="zoom-in-up">
-                    <figure class="img-project">
-                        <img src="public/imgs/imgs_proyectos/tienda_online.jpg" />
-                        <figcaption class="overlay_project">
-                            <h3>Ecommerce template.</h3>
-                            <a href="https://adrireca.github.io/ecommerce-template/" class="btn mt-3"
-                                target="_blank">Visit website
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </figcaption>
-                        <div class="background_overlay_project"></div>
-                    </figure>
-                </div>
                 <!-- <div class="col-3" id="project" data-aos="zoom-in-up">
                     <figure class="img-project">
                         <img src="public/imgs/imgs_proyectos/tienda_cosmeticos.jpg" />
@@ -375,32 +415,7 @@
                         <div class="background_overlay_project"></div>
                     </figure>
                 </div> -->
-                <div class="col-3" id="project" data-aos="zoom-in-up">
-                    <figure class="img-project">
-                        <img src="public/imgs/imgs_proyectos/galeria_fotos.jpg" />
-                        <figcaption class="overlay_project">
-                            <h3>Grid gallery.</h3>
-                            <a href="https://adrireca.github.io/grid-gallery/" class="btn mt-3" target="_blank">Visit
-                                website
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </figcaption>
-                        <div class="background_overlay_project"></div>
-                    </figure>
-                </div>
-                <div class="col-3" id="project" data-aos="zoom-in-up">
-                    <figure class="img-project">
-                        <img src="public/imgs/imgs_proyectos/ddcgap.png" />
-                        <figcaption class="overlay_project">
-                            <h3>DDCGAP.</h3>
-                            <a href="https://ddcgap.com/" class="btn mt-3" target="_blank">Visit website
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </figcaption>
-                        <div class="background_overlay_project"></div>
-                    </figure>
-                </div>
-                <div class="col-3" id="project" data-aos="zoom-in-up">
+                <!-- <div class="col-3" id="project" data-aos="zoom-in-up">
                     <figure class="img-project">
                         <img src="public/imgs/imgs_proyectos/paint.jpg" />
                         <figcaption class="overlay_project">
@@ -411,7 +426,7 @@
                         </figcaption>
                         <div class="background_overlay_project"></div>
                     </figure>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -620,8 +635,8 @@
 
 
     <!-- mi js -->
-    <script src="public/js/portafolio.js"></script>
-    <script src="public/js/parseClient.js"></script>
+    <script type="text/javascript" src="public/js/portafolio.js"></script>
+    
     <!-- <script src="public/js/app.js"></script> -->
 
     <script>

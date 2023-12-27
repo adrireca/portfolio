@@ -1,10 +1,3 @@
-// const app_id = process.env.PARSE_APPLICATION_ID;
-// const js_key = process.env.PARSE_JAVASCRIPT_KEY;
-// const host_url = process.env.PARSE_HOST_URL;
-
-// Parse.initialize(app_id, js_key);
-// Parse.serverURL = host_url;
-
 import { app_id, js_key, host_url } from './config.js';
 
 Parse.initialize(app_id, js_key);

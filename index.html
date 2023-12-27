@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
+
+    <!-- Parse back4app. -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="public/imgs/favicon/favicon1.svg">
@@ -376,7 +380,8 @@
                         <img src="public/imgs/imgs_proyectos/galeria_fotos.jpg" />
                         <figcaption class="overlay_project">
                             <h3>Grid gallery.</h3>
-                            <a href="https://adrireca.github.io/grid-gallery/" class="btn mt-3" target="_blank">Visit website
+                            <a href="https://adrireca.github.io/grid-gallery/" class="btn mt-3" target="_blank">Visit
+                                website
                                 <i class="fa-solid fa-angle-right"></i>
                             </a>
                         </figcaption>
@@ -416,15 +421,95 @@
 
 
 
-
-
-    <!-- Contact-->
+    <!-- contacto -->
     <section id="contacto">
         <div class="div_title_contact barra_seccion">
             <h3 data-aos="fade-down">Estoy muy emocionado de emprender nuevos retos y ayudarte en lo que sea<br>
                 ¿comenzamos?</h3>
         </div>
-        <div class="container px-4 px-lg-5">
+
+        <!-- Contact cards. -->
+        <div id="divContact" class="row">
+            <div id="div_cards" class="row col-12 col-lg-4 col-md-4 col-xs-12 gx-4 gx-lg-5">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                    <div class="card py-4 h-100 card_contact">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt mb-2 icon_color"></i>
+                            <h4 class="text-uppercase m-0 card_title">Dirección</h4>
+                            <hr class="my-4 mx-auto " />
+                            <div class="small description_contact">Petrer (Alicante)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                    <div class="card py-4 h-100 card_contact">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope icon_color mb-2"></i>
+                            <h4 class="text-uppercase m-0 card_title">Email</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small">
+                                <a href="mailto:adrireca3190@gmail.com" class="link_contact">adrireca3190@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                    <div class="card py-4 h-100 card_contact">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt icon_color mb-2"></i>
+                            <h4 class="text-uppercase m-0 card_title">Teléfono</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small description_contact">
+                                <a href="tel:+34671348671" class="link_tel">+34 671 34 86 71</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form. -->
+            <div class="div_form col-12 col-lg-8 col-md-8 col-xs-12">
+                <form class="contact-form" method="POST">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto"
+                                required>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensaje"
+                                required></textarea>
+                        </div>
+                        <div class="col-2 mt-3">
+                            <button id="btn_form" class="btn btn-lg submit" name="boton_form" type="submit"
+                                data-aos="fade-up">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Contact-->
+    <!-- <section id="contacto"> -->
+    <!-- <div class="div_title_contact barra_seccion">
+            <h3 data-aos="fade-down">Estoy muy emocionado de emprender nuevos retos y ayudarte en lo que sea<br>
+                ¿comenzamos?</h3>
+        </div> -->
+    <!-- <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100 card_contact">
@@ -442,7 +527,8 @@
                             <i class="fas fa-envelope icon_color mb-2"></i>
                             <h4 class="text-uppercase m-0 card_title">Email</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="small"><a href="mailto:adrireca3190@gmail.com" class="link_contact">adrireca3190@gmail.com</a></div>
+                            <div class="small"><a href="mailto:adrireca3190@gmail.com"
+                                    class="link_contact">adrireca3190@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -458,47 +544,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- contacto -->
-    <!-- <section id="contacto">
-        <div class="div_title_contact barra_seccion">
-            <h3 data-aos="fade-down">Estoy muy emocionado de emprender nuevos retos y ayudarte en lo que sea<br>
-                ¿comenzamos?</h3>
-        </div>
-
-        <div class="div_form">
-            <form class="contact-form" method="POST">
-                <div class="row">
-                    <div class="col mb-3">
-                        <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto"
-                            required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mb-3">
-                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensaje"
-                            required></textarea>
-                    </div>
-                    <div class="mt-3">
-                        <button id="btn_form" class="btn btn-lg submit" name="boton_form" type="submit"
-                            data-aos="fade-up">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
     </section> -->
 
 
@@ -576,12 +621,17 @@
 
     <!-- mi js -->
     <script src="public/js/portafolio.js"></script>
-    <script src="public/js/app.js"></script>
+    <script src="public/js/parseClient.js"></script>
+    <!-- <script src="public/js/app.js"></script> -->
+
     <script>
+        /* Animaciones. */
         AOS.init({
             duration: 1500,
             once: true
         });
+
+
     </script>
 
 </body>

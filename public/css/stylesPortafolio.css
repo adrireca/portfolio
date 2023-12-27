@@ -138,14 +138,14 @@ body {
 
 #header .btn-outline-success {
     color: #fff;
-    border-color: #04e3a8;
+    border: none;
     transition: all 500ms;
     font-size: 20px;
+    background: #04e3a8;
 }
 
 #header .btn-outline-success:hover {
     color: #000000;
-    background-color: #04e3a8;
 }
 
 #header .imagen-header {
@@ -279,6 +279,7 @@ body {
     text-align: center;
     font-size: 32px;
     color: #04e3a8;
+    text-transform: uppercase;
 }
 
 
@@ -563,16 +564,18 @@ body {
 
 
 
-
-
-
-
-
 /********************************* CONTACTO *********************************/
 #contacto{
     background-color: #04e3a8;
     padding-top: 70px;
     padding-bottom: 130px;
+}
+
+#div_cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #contacto .div_title_contact{
@@ -590,14 +593,9 @@ body {
     text-transform: uppercase;
 }
 
-#contacto .container .card_contact {
+#contacto .card_contact {
     border-radius: 10px;
     background: #000;
-}
-
-#contacto .div_title_contact hr{
-    max-width: 89%;
-    margin: auto;
 }
 
 #contacto .card_title {
@@ -617,7 +615,7 @@ body {
     font-size: 2rem;
 }
 
-#contacto .link_contact {
+#contacto .link_contact, #contacto .link_tel {
     text-decoration: none;
     color: #04e3a8;
     cursor: pointer !important;
@@ -627,48 +625,44 @@ body {
     color: #04e3a8;
 }
 
-/* #contacto .div_form{
-    max-width: 700px;
+#contacto .div_form{
+    max-width: 850px;
     margin: auto;
 }
 
 #contacto .div_form .form-control{
     padding: 1rem 0.75rem;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     border-radius: 0;
     background-color: transparent;
-    color: #fff;
+    color: #000;
 }
 
 #contacto .div_form .form-control::placeholder{
-    color: #fff;
+    color: #00000036;
     font-size: 1.2rem;
 }
 
-#contacto .div_form .form-control::placeholder{
-    color: #fff;
-    font-size: 1.2rem;
+#contacto .div_form .form-control:focus {
+    box-shadow: inset 0 -2px 0 #000;
 }
 
-#contacto .div_form .form-control:focus, #contacto .div_form .submit:focus {
-    box-shadow: inset 0 -1px 0 #ddd;
+#contacto .div_form .submit:focus {
+    box-shadow: none;
 }
 
 #contacto .submit{
     color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: #000;
     transition: all 500ms;
-    width: 100%;
     text-transform: uppercase;
 }
 
 #contacto .submit:hover{
-    color: #fff;
-    background-color: #000000;
-    border-color: #000;
-} */
+    background-color: #373636;
+}
+
 
 
 
@@ -1016,10 +1010,6 @@ body {
         height: 330px;
     }
 
-    #contacto .container {
-        max-width: 960px;
-    }
-
     #contacto .div_title_contact h3 {
         font-size: 1rem;
     }
@@ -1037,11 +1027,6 @@ body {
         width: 45%;
     }
 
-    #contacto .div_title_contact {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     .div_download_cv{
         width: 100%;
         left: 0;
@@ -1049,14 +1034,9 @@ body {
     }
 }
 
-@media(max-width: 767px){
-    #contacto .div_title_contact {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-
-    #contacto .container {
-        width: 60%;
+@media(max-width: 767px) {
+    #contacto .div_form {
+        margin-top: 40px;
     }
 }
 
@@ -1070,6 +1050,9 @@ body {
     }
     .pasos_freelance i{
         font-size: 4rem;
+    }
+    #contacto {
+        padding-top: 40px;
     }
 }
 
@@ -1130,10 +1113,11 @@ body {
         width: 80%;
     }
 
-    #contacto .container {
-        width: 80%;
+    #contacto .div_title_contact {
+        padding-left: 40px;
+        padding-right: 40px;
     }
-    
+
     #footer .frase_einstein {
         width: 98%;
     }
@@ -1155,15 +1139,6 @@ body {
     }
     #project .overlay_project a {
         font-size: 15px;
-    }
-
-    #contacto .div_title_contact {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    #contacto .container {
-        width: 100%;
     }
 
     .section_download_cv {
@@ -1209,6 +1184,10 @@ body {
 
     #seccion-portafolio {
         padding: 0;
+    }
+
+    .barra_seccion h3 {
+        font-size: 25px;
     }
     
     .div_download_cv {

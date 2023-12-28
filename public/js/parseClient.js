@@ -1,5 +1,9 @@
-import { app_id, js_key, host_url } from './config.js';
+// import { app_id, js_key, host_url } from './config.js';
 import { validateInputs } from './validation.js';
+
+const app_id = "UgiSe69sTu9YQigZDcYMeFI6dTs1l7DlMrjXMWB2";
+const js_key = "G8b7XtnZvPHKKUbGtkTRAN8FvAX8U5KTsjrtdMoa";
+const host_url = "https://parseapi.back4app.com/";
 
 Parse.initialize(app_id, js_key);
 Parse.serverURL = host_url;

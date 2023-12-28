@@ -11,9 +11,6 @@
     <!-- Parse back4app. -->
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
-    <script type="module" src="public/js/config.js"></script>
-    <script type="module" src="public/js/parseClient.js"></script>
-
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="public/imgs/favicon/favicon1.svg">
 
@@ -446,7 +443,7 @@
         <!-- Contact cards. -->
         <div id="divContact" class="row">
             <div id="div_cards" class="row col-12 col-lg-4 col-md-4 col-xs-12 gx-4 gx-lg-5">
-                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8" data-aos="zoom-out-right">
                     <div class="card py-4 h-100 card_contact">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt mb-2 icon_color"></i>
@@ -456,7 +453,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8" data-aos="zoom-out-right" data-aos-delay="400">
                     <div class="card py-4 h-100 card_contact">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope icon_color mb-2"></i>
@@ -468,7 +465,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-10 col-md-10 col-sm-8">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-8" data-aos="zoom-out-right" data-aos-delay="800">
                     <div class="card py-4 h-100 card_contact">
                         <div class="card-body text-center">
                             <i class="fas fa-mobile-alt icon_color mb-2"></i>
@@ -486,20 +483,27 @@
             <div class="div_form col-12 col-lg-8 col-md-8 col-xs-12">
                 <form class="contact-form" method="POST">
                     <div class="row">
-                        <div class="col-6 mb-3">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                        <div class="input-control col-6 mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                            <div class="error"></div>
                         </div>
-                        <div class="col-6 mb-3">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                                required>
+                        <div class="input-control col-6 mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            <div class="error"></div>
                         </div>
-                        <div class="col-12 mb-3">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto"
-                                required>
+                        <div class="input-control col-12 mb-3">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto">
+                            <div class="error"></div>
                         </div>
-                        <div class="col-12 mb-3">
-                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensaje"
-                                required></textarea>
+                        <div class="input-control col-12 mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensaje"></textarea>
+                            <div class="error"></div>
+                        </div>
+                        <div id="alert"></div>
+                        <div id="spinner" class="col-12 justify-content-center" style="display: none;">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </div>
                         <div class="col-2 mt-3">
                             <button id="btn_form" class="btn btn-lg submit" name="boton_form" type="submit"
@@ -633,6 +637,9 @@
     <!-- Animate AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script defer type="module" src="public/js/config.js"></script>
+    <script defer type="module" src="public/js/validation.js"></script>
+    <script defer type="module" src="public/js/parseClient.js"></script>
 
     <!-- mi js -->
     <script type="text/javascript" src="public/js/portafolio.js"></script>

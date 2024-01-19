@@ -39,13 +39,9 @@ async function createMessageForm() {
             spinner.style.display = "flex";
             
             showBootstrapAlert('success', '¡Gracias por contactar! Pronto recibirás una respuesta.');
-            // alert(
-            //     `¡Gracias por contactar! Pronto recibirás una respuesta.`
-            // );
         }
     } catch (error) {
         showBootstrapAlert('danger', `Error: ${error.message_object}`);
-        // alert(`Error: ${error.message_object}`);
     }
     /* Limpia campos del formulario. */
     document.querySelector(".contact-form").reset();

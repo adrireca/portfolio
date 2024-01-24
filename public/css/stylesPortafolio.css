@@ -385,11 +385,11 @@ body {
     width: 93%;
 }
 
-.carousel-control-next {
+#skillset .carousel-control-next {
     width: 30%;
 }
 
-.carousel-control-prev {
+#skillset .carousel-control-prev {
     width: 30%;
 }
 
@@ -544,7 +544,7 @@ body {
     background-color: #04e3a8;
 }
 
-#project .img-project .background_overlay_project {
+#project .img-project .background_overlay_project, #project .img-project .background_overlay_project_admin_panel {
     position: absolute;
     top: 0;
     left: 0;
@@ -558,6 +558,10 @@ body {
 
 #project .img-project:hover .background_overlay_project {
     opacity: 1;
+}
+
+#project .img-project:hover .background_overlay_project_admin_panel {
+    opacity: .4;
 }
 
 

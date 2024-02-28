@@ -474,18 +474,22 @@ body {
 #portafolio {
     max-width: 1500px;
     margin: auto;
-    padding-top: 45px;
-    padding-bottom: 50px;
+    /* padding-top: 45px;
+    padding-bottom: 50px; */
+    padding: 45px 100px 50px 100px;
 }
 
 #portafolio .projects {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* justify-content: center; */
 }
 
-#portafolio .projects #project {
+/* #portafolio .projects #project {
     width: 28%;
     margin-bottom: 20px;
-}
+} */
 
 #project .img-project {
     position: relative;
@@ -1005,9 +1009,9 @@ body {
         height: 300px;
     }
 
-    #portafolio .projects #project {
+    /* #portafolio .projects #project {
         width: 40%;
-    }
+    } */
     .div_download_cv {
         width: 70%;
     }
@@ -1033,6 +1037,10 @@ body {
         height: 330px;
     }
 
+    #portafolio .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #contacto .div_title_contact h3 {
         font-size: 1rem;
     }
@@ -1046,9 +1054,9 @@ body {
     .descripcion {
         width: 80%;
     }
-    #portafolio .projects #project {
+    /* #portafolio .projects #project {
         width: 45%;
-    }
+    } */
 
     .div_download_cv{
         width: 100%;
@@ -1132,9 +1140,13 @@ body {
         font-size: 16px;
     }
 
-    #portafolio .projects #project {
-        width: 80%;
+    #portafolio .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
+
+    /* #portafolio .projects #project {
+        width: 80%;
+    } */
 
     #contacto .div_title_contact {
         padding-left: 40px;
@@ -1153,16 +1165,18 @@ body {
     .div_freelance {
         width: 90%;
     }
-
-    #portafolio .projects #project {
-        width: 100%;
+    #portafolio {
+        padding: 45px 20px 50px 20px;
     }
-    #project .overlay_project h3 {
-        font-size: 1.5rem;
+    /* #portafolio .projects #project {
+        width: 100%;
+    } */
+    /* #project .overlay_project h3 {
+        font-size: 1.2rem;
     }
     #project .overlay_project a {
-        font-size: 15px;
-    }
+        font-size: 13px;
+    } */
 
     .section_download_cv {
         padding: 80px 0;
@@ -1204,10 +1218,16 @@ body {
     .pasos_freelance i{
         font-size: 3rem;
     }
-
-    #seccion-portafolio {
-        padding: 0;
+    #project .overlay_project h3 {
+        font-size: 1rem;
     }
+    #project .overlay_project a {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    /* #seccion-portafolio {
+        padding: 0;
+    } */
 
     .barra_seccion h3 {
         font-size: 25px;
